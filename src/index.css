@@ -1,13 +1,126 @@
-body {
+html {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: rgba(17, 17, 17, 0.911);
 }
+
+#root {
+  width: 100%;
+}
+
+.form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container h1 {
+  color: white;
+}
+
+#signupForm {
+  margin-top: 18px;
+  width: 50%;
+  height: 460px;
+  color: white;
+  padding: 15px 20px;
+  /* background-color: rgb(34, 34, 34);
+  box-shadow: 0 0 8px grey; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#signupForm .box {
+  position: relative;
+  width: 94%;
+  height: 80px;
+  transition: 0.5s ease-out;
+}
+
+#signupForm .box input {
+  width: 96%;
+  padding: 10px 10px 8px 18px;
+  border: none;
+  border-bottom: 2px solid white;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1.1rem;
+  transition: 0.5s ease-out;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#signupForm .box span {
+  color: rgba(255, 255, 255, 0.829);
+  position: absolute;
+  font-size: 1.1rem;
+  top: 10px;
+  left: 10px;
+  transition: 0.3s ease-out;
+  pointer-events: none;
+}
+
+#signupForm .box input:focus {
+  border-radius: 12px;
+}
+#signupForm .box input:focus + span,
+#signupForm .box input:valid + span {
+  top: -18px;
+}
+
+#signupForm #signup {
+  padding: 10px;
+  width: 20%;
+  border-color: transparent;
+  background-color: transparent;
+  border: 2px solid rgb(96, 140, 221);
+  color: rgb(96, 140, 221);
+  font-weight: bold;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+}
+
+#signupForm #signup:hover {
+  border: 2px solid white;
+  box-shadow: 0 0 5px white;
+  color: white;
+}
+
+#signupForm .msgBox p{
+    margin: 0;
+    padding: 0;
+}
+
+#signupForm .error {
+  color: rgb(241, 26, 26);
+  font-size: 1.1rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#signupForm .success {
+  color: rgb(13, 207, 61);
+  font-size: 1.1rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+
+#signupForm .box .toogle{
+    display: inline-block;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    font-size: 1.42rem;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    cursor: pointer;
+}
+
