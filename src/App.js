@@ -105,7 +105,7 @@ function App() {
         </div>
 
         <div className="box">
-          <input type="text" name="mail" id="mail" value={mail} onChange={(e) => { setMail(e.target.value) }} required />
+          <input type="email" name="mail" id="mail" value={mail} onChange={(e) => { setMail(e.target.value) }} required />
           <span>Email</span>
         </div>
 
